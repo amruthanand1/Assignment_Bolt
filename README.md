@@ -2,7 +2,7 @@
 # DBT Project Documentation Setup
 
 ## Prerequisites
-1. **Python**: Version 3.8 or above is recommended.
+1. **Python**: Version 3.8 is recommended.
 2. **pip**: Ensure you have Python's package manager installed.
 3. **DBT**: Installed as part of the virtual environment setup.
 
