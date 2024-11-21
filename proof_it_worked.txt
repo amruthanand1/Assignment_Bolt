@@ -1,0 +1,909 @@
+[0m06:58:04.632620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ec22e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108953b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10897e0a0>]}
+
+
+============================== 06:58:04.635316 | 636761a0-5192-407f-9521-54d07f63708e ==============================
+[0m06:58:04.635316 [info ] [MainThread]: Running with dbt=1.8.7
+[0m06:58:04.635666 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/amruth.anand/github/Assignment_AirBoltic/airboltic', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/amruth.anand/github/Assignment_AirBoltic/airboltic/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt deps', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m06:58:04.699767 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '636761a0-5192-407f-9521-54d07f63708e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108666490>]}
+[0m06:58:04.714950 [debug] [MainThread]: Set downloads directory='/var/folders/by/t1w9w0xn2mx4wsg033my6dwm0000gp/T/dbt-downloads-8ur5mra5'
+[0m06:58:04.715266 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m06:58:04.916276 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m06:58:04.917616 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m06:58:04.983522 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m06:58:04.995994 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m06:58:05.473466 [info ] [MainThread]: Installed from version 1.0.0
+[0m06:58:05.473794 [info ] [MainThread]: Updated version available: 1.3.0
+[0m06:58:05.474127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '636761a0-5192-407f-9521-54d07f63708e', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076c3430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b16c10>]}
+[0m06:58:05.474434 [info ] [MainThread]: Installing https://github.com/EqualExperts/dbt-unit-testing
+[0m06:58:05.474742 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/EqualExperts/dbt-unit-testing 42f7395babe839567e1079b34390e7b7"
+[0m06:58:06.821004 [debug] [MainThread]: STDOUT: "b''"
+[0m06:58:06.821744 [debug] [MainThread]: STDERR: "b"Cloning into '42f7395babe839567e1079b34390e7b7'...\n""
+[0m06:58:06.822171 [debug] [MainThread]: Pulling new dependency 42f7395babe839567e1079b34390e7b7.
+[0m06:58:06.822445 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m06:58:06.831327 [debug] [MainThread]: STDOUT: "b'119aaee2c265b693876a63de72b04c308cd3e3e2\n'"
+[0m06:58:06.832032 [debug] [MainThread]: STDERR: "b''"
+[0m06:58:06.832258 [debug] [MainThread]: Checking out revision e54329c3971c8c397f284a36de6a627832a24263.
+[0m06:58:06.832455 [debug] [MainThread]: Executing "git fetch origin --depth 1 e54329c3971c8c397f284a36de6a627832a24263"
+[0m06:58:07.987614 [debug] [MainThread]: STDOUT: "b''"
+[0m06:58:07.988594 [debug] [MainThread]: STDERR: "b'From https://github.com/EqualExperts/dbt-unit-testing\n * branch            e54329c3971c8c397f284a36de6a627832a24263 -> FETCH_HEAD\n'"
+[0m06:58:07.989017 [debug] [MainThread]: Executing "git reset --hard e54329c3971c8c397f284a36de6a627832a24263"
+[0m06:58:08.017606 [debug] [MainThread]: STDOUT: "b'HEAD is now at e54329c Update README\n'"
+[0m06:58:08.018416 [debug] [MainThread]: STDERR: "b''"
+[0m06:58:08.018755 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m06:58:08.026225 [debug] [MainThread]: STDOUT: "b'e54329c3971c8c397f284a36de6a627832a24263\n'"
+[0m06:58:08.026846 [debug] [MainThread]: STDERR: "b''"
+[0m06:58:08.027097 [debug] [MainThread]: Checked out at e54329c.
+[0m06:58:08.027333 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m06:58:08.033814 [debug] [MainThread]: STDOUT: "b'e54329c3971c8c397f284a36de6a627832a24263\n'"
+[0m06:58:08.034380 [debug] [MainThread]: STDERR: "b''"
+[0m06:58:08.036647 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/EqualExperts/dbt-unit-testing 42f7395babe839567e1079b34390e7b7"
+[0m06:58:08.043740 [debug] [MainThread]: STDOUT: "b''"
+[0m06:58:08.044287 [debug] [MainThread]: STDERR: "b"fatal: destination path '42f7395babe839567e1079b34390e7b7' already exists and is not an empty directory.\n""
+[0m06:58:08.044479 [debug] [MainThread]: command return code=128
+[0m06:58:08.045100 [debug] [MainThread]: Updating existing dependency 42f7395babe839567e1079b34390e7b7.
+[0m06:58:08.045290 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m06:58:08.051797 [debug] [MainThread]: STDOUT: "b'e54329c3971c8c397f284a36de6a627832a24263\n'"
+[0m06:58:08.052321 [debug] [MainThread]: STDERR: "b''"
+[0m06:58:08.052538 [debug] [MainThread]: Checking out revision e54329c3971c8c397f284a36de6a627832a24263.
+[0m06:58:08.052726 [debug] [MainThread]: Executing "git fetch origin --depth 1 e54329c3971c8c397f284a36de6a627832a24263"
+[0m06:58:08.991732 [debug] [MainThread]: STDOUT: "b''"
+[0m06:58:08.992781 [debug] [MainThread]: STDERR: "b'From https://github.com/EqualExperts/dbt-unit-testing\n * branch            e54329c3971c8c397f284a36de6a627832a24263 -> FETCH_HEAD\n'"
+[0m06:58:08.993238 [debug] [MainThread]: Executing "git reset --hard e54329c3971c8c397f284a36de6a627832a24263"
+[0m06:58:09.011889 [debug] [MainThread]: STDOUT: "b'HEAD is now at e54329c Update README\n'"
+[0m06:58:09.012775 [debug] [MainThread]: STDERR: "b''"
+[0m06:58:09.013098 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m06:58:09.022742 [debug] [MainThread]: STDOUT: "b'e54329c3971c8c397f284a36de6a627832a24263\n'"
+[0m06:58:09.023406 [debug] [MainThread]: STDERR: "b''"
+[0m06:58:09.023706 [debug] [MainThread]: Already at e54329c, nothing to do.
+[0m06:58:09.024202 [info ] [MainThread]: Installed from revision e54329c3971c8c397f284a36de6a627832a24263
+[0m06:58:09.024712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '636761a0-5192-407f-9521-54d07f63708e', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b16d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b16dc0>]}
+[0m06:58:09.025120 [info ] [MainThread]: 
+[0m06:58:09.025375 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m06:58:09.027602 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 4.434738, "process_user_time": 0.830664, "process_kernel_time": 0.188094, "process_mem_max_rss": "95584256", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m06:58:09.028315 [debug] [MainThread]: Command `dbt deps` succeeded at 06:58:09.028213 after 4.44 seconds
+[0m06:58:09.028701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ec22e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b168e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b16a60>]}
+[0m06:58:09.029007 [debug] [MainThread]: Flushing usage events
+[0m06:58:17.508561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10447e2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b9eaf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b9ecd0>]}
+
+
+============================== 06:58:17.512063 | bc2656f1-d638-4bd8-9dfa-c3700990a453 ==============================
+[0m06:58:17.512063 [info ] [MainThread]: Running with dbt=1.8.7
+[0m06:58:17.512508 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/amruth.anand/github/Assignment_AirBoltic/airboltic', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/amruth.anand/github/Assignment_AirBoltic/airboltic/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt compile', 'send_anonymous_usage_stats': 'True'}
+[0m06:58:17.738601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bc2656f1-d638-4bd8-9dfa-c3700990a453', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c9c9d0>]}
+[0m06:58:17.772254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bc2656f1-d638-4bd8-9dfa-c3700990a453', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b62280>]}
+[0m06:58:17.775038 [info ] [MainThread]: Registered adapter: duckdb=1.9.0
+[0m06:58:17.853663 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m06:58:17.854278 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m06:58:17.854508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'bc2656f1-d638-4bd8-9dfa-c3700990a453', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106fa5370>]}
+[0m06:58:18.744610 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m06:58:18.744941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'bc2656f1-d638-4bd8-9dfa-c3700990a453', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f15dc0>]}
+[0m06:58:18.885588 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.airboltic.high_level_metrics_ss' (tests/metric_layer/business_reporting_metrics/high_level_metrics_ss.sql) depends on a node named 'trip_details_incremental' in package '' which was not found
+[0m06:58:18.982412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bc2656f1-d638-4bd8-9dfa-c3700990a453', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c84d00>]}
+[0m06:58:19.072373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bc2656f1-d638-4bd8-9dfa-c3700990a453', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e6d7c0>]}
+[0m06:58:19.072716 [info ] [MainThread]: Found 12 models, 33 data tests, 6 sources, 606 macros
+[0m06:58:19.072912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bc2656f1-d638-4bd8-9dfa-c3700990a453', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b5a820>]}
+[0m06:58:19.074455 [info ] [MainThread]: 
+[0m06:58:19.074786 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m06:58:19.078361 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_memory_main_metric_layer_airboltic'
+[0m06:58:19.124315 [debug] [ThreadPool]: Using duckdb connection "list_memory_main_metric_layer_airboltic"
+[0m06:58:19.124586 [debug] [ThreadPool]: On list_memory_main_metric_layer_airboltic: BEGIN
+[0m06:58:19.124758 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:58:19.130292 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m06:58:19.130530 [debug] [ThreadPool]: Using duckdb connection "list_memory_main_metric_layer_airboltic"
+[0m06:58:19.130721 [debug] [ThreadPool]: On list_memory_main_metric_layer_airboltic: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "airboltic", "target_name": "staging", "connection_name": "list_memory_main_metric_layer_airboltic"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_metric_layer_airboltic'
+    and lower(table_catalog) = 'memory'
+  
+[0m06:58:19.158740 [debug] [ThreadPool]: SQL status: OK in 0.028 seconds
+[0m06:58:19.160254 [debug] [ThreadPool]: On list_memory_main_metric_layer_airboltic: ROLLBACK
+[0m06:58:19.160895 [debug] [ThreadPool]: Failed to rollback 'list_memory_main_metric_layer_airboltic'
+[0m06:58:19.161083 [debug] [ThreadPool]: On list_memory_main_metric_layer_airboltic: Close
+[0m06:58:19.161523 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_memory_main_metric_layer_airboltic, now list_memory_main_intermediate_layer_airboltic)
+[0m06:58:19.163117 [debug] [ThreadPool]: Using duckdb connection "list_memory_main_intermediate_layer_airboltic"
+[0m06:58:19.163285 [debug] [ThreadPool]: On list_memory_main_intermediate_layer_airboltic: BEGIN
+[0m06:58:19.163428 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m06:58:19.163702 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m06:58:19.163865 [debug] [ThreadPool]: Using duckdb connection "list_memory_main_intermediate_layer_airboltic"
+[0m06:58:19.164042 [debug] [ThreadPool]: On list_memory_main_intermediate_layer_airboltic: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "airboltic", "target_name": "staging", "connection_name": "list_memory_main_intermediate_layer_airboltic"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_intermediate_layer_airboltic'
+    and lower(table_catalog) = 'memory'
+  
+[0m06:58:19.171344 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m06:58:19.172016 [debug] [ThreadPool]: On list_memory_main_intermediate_layer_airboltic: ROLLBACK
+[0m06:58:19.172226 [debug] [ThreadPool]: Failed to rollback 'list_memory_main_intermediate_layer_airboltic'
+[0m06:58:19.172379 [debug] [ThreadPool]: On list_memory_main_intermediate_layer_airboltic: Close
+[0m06:58:19.172760 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_memory_main_intermediate_layer_airboltic, now list_memory_main_standardized_layer_airboltic)
+[0m06:58:19.174154 [debug] [ThreadPool]: Using duckdb connection "list_memory_main_standardized_layer_airboltic"
+[0m06:58:19.174316 [debug] [ThreadPool]: On list_memory_main_standardized_layer_airboltic: BEGIN
+[0m06:58:19.174457 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m06:58:19.174700 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m06:58:19.174859 [debug] [ThreadPool]: Using duckdb connection "list_memory_main_standardized_layer_airboltic"
+[0m06:58:19.175048 [debug] [ThreadPool]: On list_memory_main_standardized_layer_airboltic: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "airboltic", "target_name": "staging", "connection_name": "list_memory_main_standardized_layer_airboltic"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_standardized_layer_airboltic'
+    and lower(table_catalog) = 'memory'
+  
+[0m06:58:19.182093 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m06:58:19.182721 [debug] [ThreadPool]: On list_memory_main_standardized_layer_airboltic: ROLLBACK
+[0m06:58:19.182927 [debug] [ThreadPool]: Failed to rollback 'list_memory_main_standardized_layer_airboltic'
+[0m06:58:19.183082 [debug] [ThreadPool]: On list_memory_main_standardized_layer_airboltic: Close
+[0m06:58:19.183492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bc2656f1-d638-4bd8-9dfa-c3700990a453', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c73760>]}
+[0m06:58:19.183821 [info ] [MainThread]: Concurrency: 1 threads (target='staging')
+[0m06:58:19.184013 [info ] [MainThread]: 
+[0m06:58:19.185390 [debug] [Thread-1  ]: Began running node model.airboltic.std_airplane_info_ss
+[0m06:58:19.185629 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_memory_main_standardized_layer_airboltic, now model.airboltic.std_airplane_info_ss)
+[0m06:58:19.185823 [debug] [Thread-1  ]: Began compiling node model.airboltic.std_airplane_info_ss
+[0m06:58:19.191748 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.std_airplane_info_ss"
+[0m06:58:19.192592 [debug] [Thread-1  ]: Began executing node model.airboltic.std_airplane_info_ss
+[0m06:58:19.193172 [debug] [Thread-1  ]: Finished running node model.airboltic.std_airplane_info_ss
+[0m06:58:19.193586 [debug] [Thread-1  ]: Began running node model.airboltic.std_airplane_model_ow
+[0m06:58:19.194149 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.std_airplane_info_ss, now model.airboltic.std_airplane_model_ow)
+[0m06:58:19.194520 [debug] [Thread-1  ]: Began compiling node model.airboltic.std_airplane_model_ow
+[0m06:58:19.196996 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.std_airplane_model_ow"
+[0m06:58:19.197546 [debug] [Thread-1  ]: Began executing node model.airboltic.std_airplane_model_ow
+[0m06:58:19.197955 [debug] [Thread-1  ]: Finished running node model.airboltic.std_airplane_model_ow
+[0m06:58:19.198180 [debug] [Thread-1  ]: Began running node model.airboltic.std_customer_groups_info_ss
+[0m06:58:19.198495 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.std_airplane_model_ow, now model.airboltic.std_customer_groups_info_ss)
+[0m06:58:19.198725 [debug] [Thread-1  ]: Began compiling node model.airboltic.std_customer_groups_info_ss
+[0m06:58:19.200922 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.std_customer_groups_info_ss"
+[0m06:58:19.201345 [debug] [Thread-1  ]: Began executing node model.airboltic.std_customer_groups_info_ss
+[0m06:58:19.201702 [debug] [Thread-1  ]: Finished running node model.airboltic.std_customer_groups_info_ss
+[0m06:58:19.201916 [debug] [Thread-1  ]: Began running node model.airboltic.std_customers_info_ss
+[0m06:58:19.202187 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.std_customer_groups_info_ss, now model.airboltic.std_customers_info_ss)
+[0m06:58:19.202399 [debug] [Thread-1  ]: Began compiling node model.airboltic.std_customers_info_ss
+[0m06:58:19.204651 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.std_customers_info_ss"
+[0m06:58:19.205026 [debug] [Thread-1  ]: Began executing node model.airboltic.std_customers_info_ss
+[0m06:58:19.205397 [debug] [Thread-1  ]: Finished running node model.airboltic.std_customers_info_ss
+[0m06:58:19.205614 [debug] [Thread-1  ]: Began running node model.airboltic.std_orders_ss
+[0m06:58:19.205907 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.std_customers_info_ss, now model.airboltic.std_orders_ss)
+[0m06:58:19.206120 [debug] [Thread-1  ]: Began compiling node model.airboltic.std_orders_ss
+[0m06:58:19.208334 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.std_orders_ss"
+[0m06:58:19.208770 [debug] [Thread-1  ]: Began executing node model.airboltic.std_orders_ss
+[0m06:58:19.209123 [debug] [Thread-1  ]: Finished running node model.airboltic.std_orders_ss
+[0m06:58:19.209335 [debug] [Thread-1  ]: Began running node model.airboltic.std_trips_ow
+[0m06:58:19.209566 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.std_orders_ss, now model.airboltic.std_trips_ow)
+[0m06:58:19.209752 [debug] [Thread-1  ]: Began compiling node model.airboltic.std_trips_ow
+[0m06:58:19.212155 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.std_trips_ow"
+[0m06:58:19.212575 [debug] [Thread-1  ]: Began executing node model.airboltic.std_trips_ow
+[0m06:58:19.212929 [debug] [Thread-1  ]: Finished running node model.airboltic.std_trips_ow
+[0m06:58:19.213144 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_airplane_info_ss_airplane_id.a2dfdc9950
+[0m06:58:19.213400 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.std_trips_ow, now test.airboltic.not_null_std_airplane_info_ss_airplane_id.a2dfdc9950)
+[0m06:58:19.213687 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_airplane_info_ss_airplane_id.a2dfdc9950
+[0m06:58:19.221419 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_airplane_info_ss_airplane_id.a2dfdc9950"
+[0m06:58:19.221969 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_airplane_info_ss_airplane_id.a2dfdc9950
+[0m06:58:19.222373 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_airplane_info_ss_airplane_id.a2dfdc9950
+[0m06:58:19.222610 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_airplane_info_ss_airplane_model.ae9a32ea5a
+[0m06:58:19.222863 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_airplane_info_ss_airplane_id.a2dfdc9950, now test.airboltic.not_null_std_airplane_info_ss_airplane_model.ae9a32ea5a)
+[0m06:58:19.223058 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_airplane_info_ss_airplane_model.ae9a32ea5a
+[0m06:58:19.225586 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_airplane_info_ss_airplane_model.ae9a32ea5a"
+[0m06:58:19.225931 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_airplane_info_ss_airplane_model.ae9a32ea5a
+[0m06:58:19.226279 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_airplane_info_ss_airplane_model.ae9a32ea5a
+[0m06:58:19.226489 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_airplane_info_ss_manufacturer.66213ec138
+[0m06:58:19.226715 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_airplane_info_ss_airplane_model.ae9a32ea5a, now test.airboltic.not_null_std_airplane_info_ss_manufacturer.66213ec138)
+[0m06:58:19.226917 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_airplane_info_ss_manufacturer.66213ec138
+[0m06:58:19.229317 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_airplane_info_ss_manufacturer.66213ec138"
+[0m06:58:19.229707 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_airplane_info_ss_manufacturer.66213ec138
+[0m06:58:19.230054 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_airplane_info_ss_manufacturer.66213ec138
+[0m06:58:19.230275 [debug] [Thread-1  ]: Began running node test.airboltic.unique_std_airplane_info_ss_airplane_id.b297a6e47f
+[0m06:58:19.230497 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_airplane_info_ss_manufacturer.66213ec138, now test.airboltic.unique_std_airplane_info_ss_airplane_id.b297a6e47f)
+[0m06:58:19.230684 [debug] [Thread-1  ]: Began compiling node test.airboltic.unique_std_airplane_info_ss_airplane_id.b297a6e47f
+[0m06:58:19.234302 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.unique_std_airplane_info_ss_airplane_id.b297a6e47f"
+[0m06:58:19.234667 [debug] [Thread-1  ]: Began executing node test.airboltic.unique_std_airplane_info_ss_airplane_id.b297a6e47f
+[0m06:58:19.235043 [debug] [Thread-1  ]: Finished running node test.airboltic.unique_std_airplane_info_ss_airplane_id.b297a6e47f
+[0m06:58:19.235270 [debug] [Thread-1  ]: Began running node model.airboltic.airplane_details_ow
+[0m06:58:19.235497 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.unique_std_airplane_info_ss_airplane_id.b297a6e47f, now model.airboltic.airplane_details_ow)
+[0m06:58:19.235688 [debug] [Thread-1  ]: Began compiling node model.airboltic.airplane_details_ow
+[0m06:58:19.237740 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.airplane_details_ow"
+[0m06:58:19.238126 [debug] [Thread-1  ]: Began executing node model.airboltic.airplane_details_ow
+[0m06:58:19.238475 [debug] [Thread-1  ]: Finished running node model.airboltic.airplane_details_ow
+[0m06:58:19.238685 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_airplane_model_ow_manufacturer.7c5d0cbe11
+[0m06:58:19.238925 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.airplane_details_ow, now test.airboltic.not_null_std_airplane_model_ow_manufacturer.7c5d0cbe11)
+[0m06:58:19.239164 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_airplane_model_ow_manufacturer.7c5d0cbe11
+[0m06:58:19.242245 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_airplane_model_ow_manufacturer.7c5d0cbe11"
+[0m06:58:19.242605 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_airplane_model_ow_manufacturer.7c5d0cbe11
+[0m06:58:19.242975 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_airplane_model_ow_manufacturer.7c5d0cbe11
+[0m06:58:19.243206 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_airplane_model_ow_max_seats.2f058dc9cc
+[0m06:58:19.243429 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_airplane_model_ow_manufacturer.7c5d0cbe11, now test.airboltic.not_null_std_airplane_model_ow_max_seats.2f058dc9cc)
+[0m06:58:19.243617 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_airplane_model_ow_max_seats.2f058dc9cc
+[0m06:58:19.246019 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_airplane_model_ow_max_seats.2f058dc9cc"
+[0m06:58:19.246370 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_airplane_model_ow_max_seats.2f058dc9cc
+[0m06:58:19.246715 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_airplane_model_ow_max_seats.2f058dc9cc
+[0m06:58:19.246924 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_airplane_model_ow_model.20e806071c
+[0m06:58:19.247155 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_airplane_model_ow_max_seats.2f058dc9cc, now test.airboltic.not_null_std_airplane_model_ow_model.20e806071c)
+[0m06:58:19.247352 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_airplane_model_ow_model.20e806071c
+[0m06:58:19.249736 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_airplane_model_ow_model.20e806071c"
+[0m06:58:19.250099 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_airplane_model_ow_model.20e806071c
+[0m06:58:19.250460 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_airplane_model_ow_model.20e806071c
+[0m06:58:19.250673 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_customer_groups_info_ss_customer_group_id.3cedad9bef
+[0m06:58:19.250902 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_airplane_model_ow_model.20e806071c, now test.airboltic.not_null_std_customer_groups_info_ss_customer_group_id.3cedad9bef)
+[0m06:58:19.251101 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_customer_groups_info_ss_customer_group_id.3cedad9bef
+[0m06:58:19.253488 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_customer_groups_info_ss_customer_group_id.3cedad9bef"
+[0m06:58:19.253903 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_customer_groups_info_ss_customer_group_id.3cedad9bef
+[0m06:58:19.254250 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_customer_groups_info_ss_customer_group_id.3cedad9bef
+[0m06:58:19.254466 [debug] [Thread-1  ]: Began running node test.airboltic.unique_std_customer_groups_info_ss_customer_group_id.774501cedc
+[0m06:58:19.254692 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_customer_groups_info_ss_customer_group_id.3cedad9bef, now test.airboltic.unique_std_customer_groups_info_ss_customer_group_id.774501cedc)
+[0m06:58:19.254884 [debug] [Thread-1  ]: Began compiling node test.airboltic.unique_std_customer_groups_info_ss_customer_group_id.774501cedc
+[0m06:58:19.257319 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.unique_std_customer_groups_info_ss_customer_group_id.774501cedc"
+[0m06:58:19.257668 [debug] [Thread-1  ]: Began executing node test.airboltic.unique_std_customer_groups_info_ss_customer_group_id.774501cedc
+[0m06:58:19.258016 [debug] [Thread-1  ]: Finished running node test.airboltic.unique_std_customer_groups_info_ss_customer_group_id.774501cedc
+[0m06:58:19.258236 [debug] [Thread-1  ]: Began running node model.airboltic.customer_details_ss
+[0m06:58:19.258458 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.unique_std_customer_groups_info_ss_customer_group_id.774501cedc, now model.airboltic.customer_details_ss)
+[0m06:58:19.258651 [debug] [Thread-1  ]: Began compiling node model.airboltic.customer_details_ss
+[0m06:58:19.261511 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.customer_details_ss"
+[0m06:58:19.261866 [debug] [Thread-1  ]: Began executing node model.airboltic.customer_details_ss
+[0m06:58:19.262222 [debug] [Thread-1  ]: Finished running node model.airboltic.customer_details_ss
+[0m06:58:19.262440 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_customers_info_ss_customer_id.83830b3252
+[0m06:58:19.262741 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.customer_details_ss, now test.airboltic.not_null_std_customers_info_ss_customer_id.83830b3252)
+[0m06:58:19.262953 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_customers_info_ss_customer_id.83830b3252
+[0m06:58:19.265471 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_customers_info_ss_customer_id.83830b3252"
+[0m06:58:19.265827 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_customers_info_ss_customer_id.83830b3252
+[0m06:58:19.266190 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_customers_info_ss_customer_id.83830b3252
+[0m06:58:19.266411 [debug] [Thread-1  ]: Began running node test.airboltic.unique_std_customers_info_ss_customer_id.67c932ddc0
+[0m06:58:19.266651 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_customers_info_ss_customer_id.83830b3252, now test.airboltic.unique_std_customers_info_ss_customer_id.67c932ddc0)
+[0m06:58:19.266855 [debug] [Thread-1  ]: Began compiling node test.airboltic.unique_std_customers_info_ss_customer_id.67c932ddc0
+[0m06:58:19.269321 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.unique_std_customers_info_ss_customer_id.67c932ddc0"
+[0m06:58:19.269693 [debug] [Thread-1  ]: Began executing node test.airboltic.unique_std_customers_info_ss_customer_id.67c932ddc0
+[0m06:58:19.270059 [debug] [Thread-1  ]: Finished running node test.airboltic.unique_std_customers_info_ss_customer_id.67c932ddc0
+[0m06:58:19.270276 [debug] [Thread-1  ]: Began running node model.airboltic.trip_details_ss
+[0m06:58:19.270504 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.unique_std_customers_info_ss_customer_id.67c932ddc0, now model.airboltic.trip_details_ss)
+[0m06:58:19.270705 [debug] [Thread-1  ]: Began compiling node model.airboltic.trip_details_ss
+[0m06:58:19.273383 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.trip_details_ss"
+[0m06:58:19.273832 [debug] [Thread-1  ]: Began executing node model.airboltic.trip_details_ss
+[0m06:58:19.274248 [debug] [Thread-1  ]: Finished running node model.airboltic.trip_details_ss
+[0m06:58:19.274491 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_trips_ow_airplane_id.f0ab00a21f
+[0m06:58:19.274920 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.trip_details_ss, now test.airboltic.not_null_std_trips_ow_airplane_id.f0ab00a21f)
+[0m06:58:19.275128 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_trips_ow_airplane_id.f0ab00a21f
+[0m06:58:19.278009 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_trips_ow_airplane_id.f0ab00a21f"
+[0m06:58:19.278428 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_trips_ow_airplane_id.f0ab00a21f
+[0m06:58:19.278811 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_trips_ow_airplane_id.f0ab00a21f
+[0m06:58:19.279042 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_trips_ow_destination_city.d2c867e525
+[0m06:58:19.279303 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_trips_ow_airplane_id.f0ab00a21f, now test.airboltic.not_null_std_trips_ow_destination_city.d2c867e525)
+[0m06:58:19.279498 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_trips_ow_destination_city.d2c867e525
+[0m06:58:19.282076 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_trips_ow_destination_city.d2c867e525"
+[0m06:58:19.282444 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_trips_ow_destination_city.d2c867e525
+[0m06:58:19.282853 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_trips_ow_destination_city.d2c867e525
+[0m06:58:19.283110 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_trips_ow_origin_city.0b1a846287
+[0m06:58:19.283361 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_trips_ow_destination_city.d2c867e525, now test.airboltic.not_null_std_trips_ow_origin_city.0b1a846287)
+[0m06:58:19.283570 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_trips_ow_origin_city.0b1a846287
+[0m06:58:19.287081 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_trips_ow_origin_city.0b1a846287"
+[0m06:58:19.287495 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_trips_ow_origin_city.0b1a846287
+[0m06:58:19.287877 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_trips_ow_origin_city.0b1a846287
+[0m06:58:19.288103 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_trips_ow_trip_end_date.5cdb7aff0e
+[0m06:58:19.288350 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_trips_ow_origin_city.0b1a846287, now test.airboltic.not_null_std_trips_ow_trip_end_date.5cdb7aff0e)
+[0m06:58:19.288559 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_trips_ow_trip_end_date.5cdb7aff0e
+[0m06:58:19.291153 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_trips_ow_trip_end_date.5cdb7aff0e"
+[0m06:58:19.291522 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_trips_ow_trip_end_date.5cdb7aff0e
+[0m06:58:19.291912 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_trips_ow_trip_end_date.5cdb7aff0e
+[0m06:58:19.292142 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_trips_ow_trip_end_timestamp.6b7743396f
+[0m06:58:19.292418 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_trips_ow_trip_end_date.5cdb7aff0e, now test.airboltic.not_null_std_trips_ow_trip_end_timestamp.6b7743396f)
+[0m06:58:19.292642 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_trips_ow_trip_end_timestamp.6b7743396f
+[0m06:58:19.295737 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_trips_ow_trip_end_timestamp.6b7743396f"
+[0m06:58:19.296193 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_trips_ow_trip_end_timestamp.6b7743396f
+[0m06:58:19.296608 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_trips_ow_trip_end_timestamp.6b7743396f
+[0m06:58:19.296839 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_trips_ow_trip_id.66802dc5ee
+[0m06:58:19.297121 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_trips_ow_trip_end_timestamp.6b7743396f, now test.airboltic.not_null_std_trips_ow_trip_id.66802dc5ee)
+[0m06:58:19.297361 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_trips_ow_trip_id.66802dc5ee
+[0m06:58:19.300115 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_trips_ow_trip_id.66802dc5ee"
+[0m06:58:19.300530 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_trips_ow_trip_id.66802dc5ee
+[0m06:58:19.300904 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_trips_ow_trip_id.66802dc5ee
+[0m06:58:19.301134 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_trips_ow_trip_start_timestamp.2f6be3948d
+[0m06:58:19.301372 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_trips_ow_trip_id.66802dc5ee, now test.airboltic.not_null_std_trips_ow_trip_start_timestamp.2f6be3948d)
+[0m06:58:19.301575 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_trips_ow_trip_start_timestamp.2f6be3948d
+[0m06:58:19.304128 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_trips_ow_trip_start_timestamp.2f6be3948d"
+[0m06:58:19.304492 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_trips_ow_trip_start_timestamp.2f6be3948d
+[0m06:58:19.304862 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_trips_ow_trip_start_timestamp.2f6be3948d
+[0m06:58:19.305081 [debug] [Thread-1  ]: Began running node test.airboltic.unique_std_trips_ow_trip_id.4a64a80a2b
+[0m06:58:19.305318 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_trips_ow_trip_start_timestamp.2f6be3948d, now test.airboltic.unique_std_trips_ow_trip_id.4a64a80a2b)
+[0m06:58:19.305515 [debug] [Thread-1  ]: Began compiling node test.airboltic.unique_std_trips_ow_trip_id.4a64a80a2b
+[0m06:58:19.308831 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.unique_std_trips_ow_trip_id.4a64a80a2b"
+[0m06:58:19.309222 [debug] [Thread-1  ]: Began executing node test.airboltic.unique_std_trips_ow_trip_id.4a64a80a2b
+[0m06:58:19.309592 [debug] [Thread-1  ]: Finished running node test.airboltic.unique_std_trips_ow_trip_id.4a64a80a2b
+[0m06:58:19.309815 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_airplane_details_ow_airplane_id.ec29e3c0e2
+[0m06:58:19.310052 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.unique_std_trips_ow_trip_id.4a64a80a2b, now test.airboltic.not_null_airplane_details_ow_airplane_id.ec29e3c0e2)
+[0m06:58:19.310249 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_airplane_details_ow_airplane_id.ec29e3c0e2
+[0m06:58:19.312806 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_airplane_details_ow_airplane_id.ec29e3c0e2"
+[0m06:58:19.313243 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_airplane_details_ow_airplane_id.ec29e3c0e2
+[0m06:58:19.313618 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_airplane_details_ow_airplane_id.ec29e3c0e2
+[0m06:58:19.313860 [debug] [Thread-1  ]: Began running node test.airboltic.unique_airplane_details_ow_airplane_id.01f615aa31
+[0m06:58:19.314138 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_airplane_details_ow_airplane_id.ec29e3c0e2, now test.airboltic.unique_airplane_details_ow_airplane_id.01f615aa31)
+[0m06:58:19.314384 [debug] [Thread-1  ]: Began compiling node test.airboltic.unique_airplane_details_ow_airplane_id.01f615aa31
+[0m06:58:19.317193 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.unique_airplane_details_ow_airplane_id.01f615aa31"
+[0m06:58:19.317573 [debug] [Thread-1  ]: Began executing node test.airboltic.unique_airplane_details_ow_airplane_id.01f615aa31
+[0m06:58:19.317947 [debug] [Thread-1  ]: Finished running node test.airboltic.unique_airplane_details_ow_airplane_id.01f615aa31
+[0m06:58:19.318175 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_customer_details_ss_customer_id.21d530e0f1
+[0m06:58:19.318416 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.unique_airplane_details_ow_airplane_id.01f615aa31, now test.airboltic.not_null_customer_details_ss_customer_id.21d530e0f1)
+[0m06:58:19.318613 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_customer_details_ss_customer_id.21d530e0f1
+[0m06:58:19.321199 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_customer_details_ss_customer_id.21d530e0f1"
+[0m06:58:19.321566 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_customer_details_ss_customer_id.21d530e0f1
+[0m06:58:19.321942 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_customer_details_ss_customer_id.21d530e0f1
+[0m06:58:19.322169 [debug] [Thread-1  ]: Began running node test.airboltic.unique_customer_details_ss_customer_id.c0a554dae0
+[0m06:58:19.322400 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_customer_details_ss_customer_id.21d530e0f1, now test.airboltic.unique_customer_details_ss_customer_id.c0a554dae0)
+[0m06:58:19.322597 [debug] [Thread-1  ]: Began compiling node test.airboltic.unique_customer_details_ss_customer_id.c0a554dae0
+[0m06:58:19.325127 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.unique_customer_details_ss_customer_id.c0a554dae0"
+[0m06:58:19.325493 [debug] [Thread-1  ]: Began executing node test.airboltic.unique_customer_details_ss_customer_id.c0a554dae0
+[0m06:58:19.325855 [debug] [Thread-1  ]: Finished running node test.airboltic.unique_customer_details_ss_customer_id.c0a554dae0
+[0m06:58:19.326083 [debug] [Thread-1  ]: Began running node model.airboltic.airplane_metrics_ss
+[0m06:58:19.326340 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.unique_customer_details_ss_customer_id.c0a554dae0, now model.airboltic.airplane_metrics_ss)
+[0m06:58:19.326574 [debug] [Thread-1  ]: Began compiling node model.airboltic.airplane_metrics_ss
+[0m06:58:19.329176 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.airplane_metrics_ss"
+[0m06:58:19.329669 [debug] [Thread-1  ]: Began executing node model.airboltic.airplane_metrics_ss
+[0m06:58:19.330059 [debug] [Thread-1  ]: Finished running node model.airboltic.airplane_metrics_ss
+[0m06:58:19.330285 [debug] [Thread-1  ]: Began running node model.airboltic.customer_group_metrics_ss
+[0m06:58:19.330599 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.airplane_metrics_ss, now model.airboltic.customer_group_metrics_ss)
+[0m06:58:19.330827 [debug] [Thread-1  ]: Began compiling node model.airboltic.customer_group_metrics_ss
+[0m06:58:19.334220 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.customer_group_metrics_ss"
+[0m06:58:19.334697 [debug] [Thread-1  ]: Began executing node model.airboltic.customer_group_metrics_ss
+[0m06:58:19.335297 [debug] [Thread-1  ]: Finished running node model.airboltic.customer_group_metrics_ss
+[0m06:58:19.335572 [debug] [Thread-1  ]: Began running node model.airboltic.high_level_metrics_ss
+[0m06:58:19.335847 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.customer_group_metrics_ss, now model.airboltic.high_level_metrics_ss)
+[0m06:58:19.336063 [debug] [Thread-1  ]: Began compiling node model.airboltic.high_level_metrics_ss
+[0m06:58:19.338466 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.high_level_metrics_ss"
+[0m06:58:19.338946 [debug] [Thread-1  ]: Began executing node model.airboltic.high_level_metrics_ss
+[0m06:58:19.339338 [debug] [Thread-1  ]: Finished running node model.airboltic.high_level_metrics_ss
+[0m06:58:19.339570 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_trip_details_ss_airplane_id.bae13cc772
+[0m06:58:19.339818 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.high_level_metrics_ss, now test.airboltic.not_null_trip_details_ss_airplane_id.bae13cc772)
+[0m06:58:19.340018 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_trip_details_ss_airplane_id.bae13cc772
+[0m06:58:19.342679 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_trip_details_ss_airplane_id.bae13cc772"
+[0m06:58:19.343058 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_trip_details_ss_airplane_id.bae13cc772
+[0m06:58:19.343434 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_trip_details_ss_airplane_id.bae13cc772
+[0m06:58:19.343657 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_trip_details_ss_customer_id.715eec90a0
+[0m06:58:19.343892 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_trip_details_ss_airplane_id.bae13cc772, now test.airboltic.not_null_trip_details_ss_customer_id.715eec90a0)
+[0m06:58:19.344092 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_trip_details_ss_customer_id.715eec90a0
+[0m06:58:19.346713 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_trip_details_ss_customer_id.715eec90a0"
+[0m06:58:19.347105 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_trip_details_ss_customer_id.715eec90a0
+[0m06:58:19.347477 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_trip_details_ss_customer_id.715eec90a0
+[0m06:58:19.347730 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_trip_details_ss_flight_time_minutes.e4aefc2b9d
+[0m06:58:19.347967 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_trip_details_ss_customer_id.715eec90a0, now test.airboltic.not_null_trip_details_ss_flight_time_minutes.e4aefc2b9d)
+[0m06:58:19.348170 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_trip_details_ss_flight_time_minutes.e4aefc2b9d
+[0m06:58:19.350722 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_trip_details_ss_flight_time_minutes.e4aefc2b9d"
+[0m06:58:19.351108 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_trip_details_ss_flight_time_minutes.e4aefc2b9d
+[0m06:58:19.351531 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_trip_details_ss_flight_time_minutes.e4aefc2b9d
+[0m06:58:19.351770 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_trip_details_ss_price.00ba9a76dc
+[0m06:58:19.352013 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_trip_details_ss_flight_time_minutes.e4aefc2b9d, now test.airboltic.not_null_trip_details_ss_price.00ba9a76dc)
+[0m06:58:19.352210 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_trip_details_ss_price.00ba9a76dc
+[0m06:58:19.356265 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_trip_details_ss_price.00ba9a76dc"
+[0m06:58:19.356769 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_trip_details_ss_price.00ba9a76dc
+[0m06:58:19.357188 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_trip_details_ss_price.00ba9a76dc
+[0m06:58:19.357428 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_trip_details_ss_status.10773622d3
+[0m06:58:19.357691 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_trip_details_ss_price.00ba9a76dc, now test.airboltic.not_null_trip_details_ss_status.10773622d3)
+[0m06:58:19.357894 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_trip_details_ss_status.10773622d3
+[0m06:58:19.360675 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_trip_details_ss_status.10773622d3"
+[0m06:58:19.361061 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_trip_details_ss_status.10773622d3
+[0m06:58:19.361438 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_trip_details_ss_status.10773622d3
+[0m06:58:19.361666 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_trip_details_ss_trip_end_date.4844ee3055
+[0m06:58:19.361935 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_trip_details_ss_status.10773622d3, now test.airboltic.not_null_trip_details_ss_trip_end_date.4844ee3055)
+[0m06:58:19.362171 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_trip_details_ss_trip_end_date.4844ee3055
+[0m06:58:19.364870 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_trip_details_ss_trip_end_date.4844ee3055"
+[0m06:58:19.365256 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_trip_details_ss_trip_end_date.4844ee3055
+[0m06:58:19.365642 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_trip_details_ss_trip_end_date.4844ee3055
+[0m06:58:19.365873 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_trip_details_ss_trip_end_timestamp.9f8f1bd86d
+[0m06:58:19.366123 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_trip_details_ss_trip_end_date.4844ee3055, now test.airboltic.not_null_trip_details_ss_trip_end_timestamp.9f8f1bd86d)
+[0m06:58:19.366326 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_trip_details_ss_trip_end_timestamp.9f8f1bd86d
+[0m06:58:19.368955 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_trip_details_ss_trip_end_timestamp.9f8f1bd86d"
+[0m06:58:19.369352 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_trip_details_ss_trip_end_timestamp.9f8f1bd86d
+[0m06:58:19.369725 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_trip_details_ss_trip_end_timestamp.9f8f1bd86d
+[0m06:58:19.369952 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_trip_details_ss_trip_id.2c1bf4f9bf
+[0m06:58:19.370202 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_trip_details_ss_trip_end_timestamp.9f8f1bd86d, now test.airboltic.not_null_trip_details_ss_trip_id.2c1bf4f9bf)
+[0m06:58:19.370413 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_trip_details_ss_trip_id.2c1bf4f9bf
+[0m06:58:19.373021 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_trip_details_ss_trip_id.2c1bf4f9bf"
+[0m06:58:19.373406 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_trip_details_ss_trip_id.2c1bf4f9bf
+[0m06:58:19.373787 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_trip_details_ss_trip_id.2c1bf4f9bf
+[0m06:58:19.374023 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_trip_details_ss_trip_start_timestamp.69042af51c
+[0m06:58:19.374264 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_trip_details_ss_trip_id.2c1bf4f9bf, now test.airboltic.not_null_trip_details_ss_trip_start_timestamp.69042af51c)
+[0m06:58:19.374471 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_trip_details_ss_trip_start_timestamp.69042af51c
+[0m06:58:19.377545 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_trip_details_ss_trip_start_timestamp.69042af51c"
+[0m06:58:19.378062 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_trip_details_ss_trip_start_timestamp.69042af51c
+[0m06:58:19.378496 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_trip_details_ss_trip_start_timestamp.69042af51c
+[0m06:58:19.378736 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_airplane_metrics_ss_airplane_id.447be6bde7
+[0m06:58:19.378986 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_trip_details_ss_trip_start_timestamp.69042af51c, now test.airboltic.not_null_airplane_metrics_ss_airplane_id.447be6bde7)
+[0m06:58:19.379198 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_airplane_metrics_ss_airplane_id.447be6bde7
+[0m06:58:19.383031 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_airplane_metrics_ss_airplane_id.447be6bde7"
+[0m06:58:19.383531 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_airplane_metrics_ss_airplane_id.447be6bde7
+[0m06:58:19.383934 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_airplane_metrics_ss_airplane_id.447be6bde7
+[0m06:58:19.384445 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m06:58:19.384640 [debug] [MainThread]: Connection 'test.airboltic.not_null_airplane_metrics_ss_airplane_id.447be6bde7' was properly closed.
+[0m06:58:19.388004 [debug] [MainThread]: Command end result
+[0m06:58:19.451219 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 2.0286744, "process_user_time": 2.400643, "process_kernel_time": 0.207243, "process_mem_max_rss": "140836864", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m06:58:19.451599 [debug] [MainThread]: Command `dbt compile` succeeded at 06:58:19.451548 after 2.03 seconds
+[0m06:58:19.451821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10447e2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064953a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110bc8730>]}
+[0m06:58:19.452018 [debug] [MainThread]: Flushing usage events
+[0m06:58:27.224494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10353f2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b63be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b63dc0>]}
+
+
+============================== 06:58:27.227160 | d9ac8a12-5b09-4b3a-bdf9-4a9242064950 ==============================
+[0m06:58:27.227160 [info ] [MainThread]: Running with dbt=1.8.7
+[0m06:58:27.227515 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/amruth.anand/github/Assignment_AirBoltic/airboltic/logs', 'version_check': 'True', 'profiles_dir': '/Users/amruth.anand/github/Assignment_AirBoltic/airboltic', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt docs generate', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m06:58:27.351932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd9ac8a12-5b09-4b3a-bdf9-4a9242064950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e476d0>]}
+[0m06:58:27.382112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd9ac8a12-5b09-4b3a-bdf9-4a9242064950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e9b580>]}
+[0m06:58:27.384249 [info ] [MainThread]: Registered adapter: duckdb=1.9.0
+[0m06:58:27.453695 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m06:58:27.566037 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m06:58:27.566335 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m06:58:27.600973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd9ac8a12-5b09-4b3a-bdf9-4a9242064950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064f1a00>]}
+[0m06:58:27.614075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd9ac8a12-5b09-4b3a-bdf9-4a9242064950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10660e580>]}
+[0m06:58:27.614385 [info ] [MainThread]: Found 12 models, 33 data tests, 6 sources, 606 macros
+[0m06:58:27.614593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd9ac8a12-5b09-4b3a-bdf9-4a9242064950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10660e610>]}
+[0m06:58:27.616125 [info ] [MainThread]: 
+[0m06:58:27.616442 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m06:58:27.619912 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_memory_main_metric_layer_airboltic'
+[0m06:58:27.666979 [debug] [ThreadPool]: Using duckdb connection "list_memory_main_metric_layer_airboltic"
+[0m06:58:27.667242 [debug] [ThreadPool]: On list_memory_main_metric_layer_airboltic: BEGIN
+[0m06:58:27.667425 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:58:27.671673 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m06:58:27.671901 [debug] [ThreadPool]: Using duckdb connection "list_memory_main_metric_layer_airboltic"
+[0m06:58:27.672095 [debug] [ThreadPool]: On list_memory_main_metric_layer_airboltic: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "airboltic", "target_name": "staging", "connection_name": "list_memory_main_metric_layer_airboltic"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_metric_layer_airboltic'
+    and lower(table_catalog) = 'memory'
+  
+[0m06:58:27.688486 [debug] [ThreadPool]: SQL status: OK in 0.016 seconds
+[0m06:58:27.689276 [debug] [ThreadPool]: On list_memory_main_metric_layer_airboltic: ROLLBACK
+[0m06:58:27.690056 [debug] [ThreadPool]: Failed to rollback 'list_memory_main_metric_layer_airboltic'
+[0m06:58:27.690230 [debug] [ThreadPool]: On list_memory_main_metric_layer_airboltic: Close
+[0m06:58:27.690680 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_memory_main_metric_layer_airboltic, now list_memory_main_intermediate_layer_airboltic)
+[0m06:58:27.692224 [debug] [ThreadPool]: Using duckdb connection "list_memory_main_intermediate_layer_airboltic"
+[0m06:58:27.692402 [debug] [ThreadPool]: On list_memory_main_intermediate_layer_airboltic: BEGIN
+[0m06:58:27.692575 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m06:58:27.692870 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m06:58:27.693052 [debug] [ThreadPool]: Using duckdb connection "list_memory_main_intermediate_layer_airboltic"
+[0m06:58:27.693233 [debug] [ThreadPool]: On list_memory_main_intermediate_layer_airboltic: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "airboltic", "target_name": "staging", "connection_name": "list_memory_main_intermediate_layer_airboltic"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_intermediate_layer_airboltic'
+    and lower(table_catalog) = 'memory'
+  
+[0m06:58:27.700547 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m06:58:27.701233 [debug] [ThreadPool]: On list_memory_main_intermediate_layer_airboltic: ROLLBACK
+[0m06:58:27.701465 [debug] [ThreadPool]: Failed to rollback 'list_memory_main_intermediate_layer_airboltic'
+[0m06:58:27.701624 [debug] [ThreadPool]: On list_memory_main_intermediate_layer_airboltic: Close
+[0m06:58:27.702034 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_memory_main_intermediate_layer_airboltic, now list_memory_main_standardized_layer_airboltic)
+[0m06:58:27.703471 [debug] [ThreadPool]: Using duckdb connection "list_memory_main_standardized_layer_airboltic"
+[0m06:58:27.703647 [debug] [ThreadPool]: On list_memory_main_standardized_layer_airboltic: BEGIN
+[0m06:58:27.703792 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m06:58:27.704049 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m06:58:27.704208 [debug] [ThreadPool]: Using duckdb connection "list_memory_main_standardized_layer_airboltic"
+[0m06:58:27.704370 [debug] [ThreadPool]: On list_memory_main_standardized_layer_airboltic: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "airboltic", "target_name": "staging", "connection_name": "list_memory_main_standardized_layer_airboltic"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_standardized_layer_airboltic'
+    and lower(table_catalog) = 'memory'
+  
+[0m06:58:27.711481 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m06:58:27.712142 [debug] [ThreadPool]: On list_memory_main_standardized_layer_airboltic: ROLLBACK
+[0m06:58:27.712351 [debug] [ThreadPool]: Failed to rollback 'list_memory_main_standardized_layer_airboltic'
+[0m06:58:27.712511 [debug] [ThreadPool]: On list_memory_main_standardized_layer_airboltic: Close
+[0m06:58:27.712936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd9ac8a12-5b09-4b3a-bdf9-4a9242064950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e38850>]}
+[0m06:58:27.713262 [info ] [MainThread]: Concurrency: 1 threads (target='staging')
+[0m06:58:27.713453 [info ] [MainThread]: 
+[0m06:58:27.715294 [debug] [Thread-1  ]: Began running node model.airboltic.std_airplane_info_ss
+[0m06:58:27.715573 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_memory_main_standardized_layer_airboltic, now model.airboltic.std_airplane_info_ss)
+[0m06:58:27.715795 [debug] [Thread-1  ]: Began compiling node model.airboltic.std_airplane_info_ss
+[0m06:58:27.721410 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.std_airplane_info_ss"
+[0m06:58:27.721973 [debug] [Thread-1  ]: Began executing node model.airboltic.std_airplane_info_ss
+[0m06:58:27.722595 [debug] [Thread-1  ]: Finished running node model.airboltic.std_airplane_info_ss
+[0m06:58:27.722923 [debug] [Thread-1  ]: Began running node model.airboltic.std_airplane_model_ow
+[0m06:58:27.723387 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.std_airplane_info_ss, now model.airboltic.std_airplane_model_ow)
+[0m06:58:27.723642 [debug] [Thread-1  ]: Began compiling node model.airboltic.std_airplane_model_ow
+[0m06:58:27.726219 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.std_airplane_model_ow"
+[0m06:58:27.726835 [debug] [Thread-1  ]: Began executing node model.airboltic.std_airplane_model_ow
+[0m06:58:27.727290 [debug] [Thread-1  ]: Finished running node model.airboltic.std_airplane_model_ow
+[0m06:58:27.727527 [debug] [Thread-1  ]: Began running node model.airboltic.std_customer_groups_info_ss
+[0m06:58:27.727877 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.std_airplane_model_ow, now model.airboltic.std_customer_groups_info_ss)
+[0m06:58:27.728096 [debug] [Thread-1  ]: Began compiling node model.airboltic.std_customer_groups_info_ss
+[0m06:58:27.730382 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.std_customer_groups_info_ss"
+[0m06:58:27.730793 [debug] [Thread-1  ]: Began executing node model.airboltic.std_customer_groups_info_ss
+[0m06:58:27.731156 [debug] [Thread-1  ]: Finished running node model.airboltic.std_customer_groups_info_ss
+[0m06:58:27.731369 [debug] [Thread-1  ]: Began running node model.airboltic.std_customers_info_ss
+[0m06:58:27.731652 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.std_customer_groups_info_ss, now model.airboltic.std_customers_info_ss)
+[0m06:58:27.731861 [debug] [Thread-1  ]: Began compiling node model.airboltic.std_customers_info_ss
+[0m06:58:27.734004 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.std_customers_info_ss"
+[0m06:58:27.734358 [debug] [Thread-1  ]: Began executing node model.airboltic.std_customers_info_ss
+[0m06:58:27.734731 [debug] [Thread-1  ]: Finished running node model.airboltic.std_customers_info_ss
+[0m06:58:27.734960 [debug] [Thread-1  ]: Began running node model.airboltic.std_orders_ss
+[0m06:58:27.735250 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.std_customers_info_ss, now model.airboltic.std_orders_ss)
+[0m06:58:27.735455 [debug] [Thread-1  ]: Began compiling node model.airboltic.std_orders_ss
+[0m06:58:27.737670 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.std_orders_ss"
+[0m06:58:27.738025 [debug] [Thread-1  ]: Began executing node model.airboltic.std_orders_ss
+[0m06:58:27.738374 [debug] [Thread-1  ]: Finished running node model.airboltic.std_orders_ss
+[0m06:58:27.738586 [debug] [Thread-1  ]: Began running node model.airboltic.std_trips_ow
+[0m06:58:27.738810 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.std_orders_ss, now model.airboltic.std_trips_ow)
+[0m06:58:27.738997 [debug] [Thread-1  ]: Began compiling node model.airboltic.std_trips_ow
+[0m06:58:27.743913 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.std_trips_ow"
+[0m06:58:27.744293 [debug] [Thread-1  ]: Began executing node model.airboltic.std_trips_ow
+[0m06:58:27.744647 [debug] [Thread-1  ]: Finished running node model.airboltic.std_trips_ow
+[0m06:58:27.744862 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_airplane_info_ss_airplane_id.a2dfdc9950
+[0m06:58:27.745201 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.std_trips_ow, now test.airboltic.not_null_std_airplane_info_ss_airplane_id.a2dfdc9950)
+[0m06:58:27.745423 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_airplane_info_ss_airplane_id.a2dfdc9950
+[0m06:58:27.752219 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_airplane_info_ss_airplane_id.a2dfdc9950"
+[0m06:58:27.752614 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_airplane_info_ss_airplane_id.a2dfdc9950
+[0m06:58:27.752977 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_airplane_info_ss_airplane_id.a2dfdc9950
+[0m06:58:27.753196 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_airplane_info_ss_airplane_model.ae9a32ea5a
+[0m06:58:27.753430 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_airplane_info_ss_airplane_id.a2dfdc9950, now test.airboltic.not_null_std_airplane_info_ss_airplane_model.ae9a32ea5a)
+[0m06:58:27.753626 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_airplane_info_ss_airplane_model.ae9a32ea5a
+[0m06:58:27.756019 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_airplane_info_ss_airplane_model.ae9a32ea5a"
+[0m06:58:27.756363 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_airplane_info_ss_airplane_model.ae9a32ea5a
+[0m06:58:27.756710 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_airplane_info_ss_airplane_model.ae9a32ea5a
+[0m06:58:27.756927 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_airplane_info_ss_manufacturer.66213ec138
+[0m06:58:27.757150 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_airplane_info_ss_airplane_model.ae9a32ea5a, now test.airboltic.not_null_std_airplane_info_ss_manufacturer.66213ec138)
+[0m06:58:27.757341 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_airplane_info_ss_manufacturer.66213ec138
+[0m06:58:27.759725 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_airplane_info_ss_manufacturer.66213ec138"
+[0m06:58:27.760082 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_airplane_info_ss_manufacturer.66213ec138
+[0m06:58:27.760423 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_airplane_info_ss_manufacturer.66213ec138
+[0m06:58:27.760631 [debug] [Thread-1  ]: Began running node test.airboltic.unique_std_airplane_info_ss_airplane_id.b297a6e47f
+[0m06:58:27.760872 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_airplane_info_ss_manufacturer.66213ec138, now test.airboltic.unique_std_airplane_info_ss_airplane_id.b297a6e47f)
+[0m06:58:27.761095 [debug] [Thread-1  ]: Began compiling node test.airboltic.unique_std_airplane_info_ss_airplane_id.b297a6e47f
+[0m06:58:27.764823 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.unique_std_airplane_info_ss_airplane_id.b297a6e47f"
+[0m06:58:27.765207 [debug] [Thread-1  ]: Began executing node test.airboltic.unique_std_airplane_info_ss_airplane_id.b297a6e47f
+[0m06:58:27.765593 [debug] [Thread-1  ]: Finished running node test.airboltic.unique_std_airplane_info_ss_airplane_id.b297a6e47f
+[0m06:58:27.765822 [debug] [Thread-1  ]: Began running node model.airboltic.airplane_details_ow
+[0m06:58:27.766061 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.unique_std_airplane_info_ss_airplane_id.b297a6e47f, now model.airboltic.airplane_details_ow)
+[0m06:58:27.766265 [debug] [Thread-1  ]: Began compiling node model.airboltic.airplane_details_ow
+[0m06:58:27.793727 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.airplane_details_ow"
+[0m06:58:27.794271 [debug] [Thread-1  ]: Began executing node model.airboltic.airplane_details_ow
+[0m06:58:27.794668 [debug] [Thread-1  ]: Finished running node model.airboltic.airplane_details_ow
+[0m06:58:27.794895 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_airplane_model_ow_manufacturer.7c5d0cbe11
+[0m06:58:27.795111 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.airplane_details_ow, now test.airboltic.not_null_std_airplane_model_ow_manufacturer.7c5d0cbe11)
+[0m06:58:27.795300 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_airplane_model_ow_manufacturer.7c5d0cbe11
+[0m06:58:27.797820 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_airplane_model_ow_manufacturer.7c5d0cbe11"
+[0m06:58:27.798229 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_airplane_model_ow_manufacturer.7c5d0cbe11
+[0m06:58:27.798589 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_airplane_model_ow_manufacturer.7c5d0cbe11
+[0m06:58:27.798800 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_airplane_model_ow_max_seats.2f058dc9cc
+[0m06:58:27.799023 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_airplane_model_ow_manufacturer.7c5d0cbe11, now test.airboltic.not_null_std_airplane_model_ow_max_seats.2f058dc9cc)
+[0m06:58:27.799217 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_airplane_model_ow_max_seats.2f058dc9cc
+[0m06:58:27.801611 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_airplane_model_ow_max_seats.2f058dc9cc"
+[0m06:58:27.801951 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_airplane_model_ow_max_seats.2f058dc9cc
+[0m06:58:27.802324 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_airplane_model_ow_max_seats.2f058dc9cc
+[0m06:58:27.802534 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_airplane_model_ow_model.20e806071c
+[0m06:58:27.802753 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_airplane_model_ow_max_seats.2f058dc9cc, now test.airboltic.not_null_std_airplane_model_ow_model.20e806071c)
+[0m06:58:27.802942 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_airplane_model_ow_model.20e806071c
+[0m06:58:27.805313 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_airplane_model_ow_model.20e806071c"
+[0m06:58:27.805654 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_airplane_model_ow_model.20e806071c
+[0m06:58:27.805996 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_airplane_model_ow_model.20e806071c
+[0m06:58:27.806206 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_customer_groups_info_ss_customer_group_id.3cedad9bef
+[0m06:58:27.806427 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_airplane_model_ow_model.20e806071c, now test.airboltic.not_null_std_customer_groups_info_ss_customer_group_id.3cedad9bef)
+[0m06:58:27.806629 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_customer_groups_info_ss_customer_group_id.3cedad9bef
+[0m06:58:27.809127 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_customer_groups_info_ss_customer_group_id.3cedad9bef"
+[0m06:58:27.809468 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_customer_groups_info_ss_customer_group_id.3cedad9bef
+[0m06:58:27.809816 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_customer_groups_info_ss_customer_group_id.3cedad9bef
+[0m06:58:27.810032 [debug] [Thread-1  ]: Began running node test.airboltic.unique_std_customer_groups_info_ss_customer_group_id.774501cedc
+[0m06:58:27.810262 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_customer_groups_info_ss_customer_group_id.3cedad9bef, now test.airboltic.unique_std_customer_groups_info_ss_customer_group_id.774501cedc)
+[0m06:58:27.810459 [debug] [Thread-1  ]: Began compiling node test.airboltic.unique_std_customer_groups_info_ss_customer_group_id.774501cedc
+[0m06:58:27.812815 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.unique_std_customer_groups_info_ss_customer_group_id.774501cedc"
+[0m06:58:27.813152 [debug] [Thread-1  ]: Began executing node test.airboltic.unique_std_customer_groups_info_ss_customer_group_id.774501cedc
+[0m06:58:27.813499 [debug] [Thread-1  ]: Finished running node test.airboltic.unique_std_customer_groups_info_ss_customer_group_id.774501cedc
+[0m06:58:27.813711 [debug] [Thread-1  ]: Began running node model.airboltic.customer_details_ss
+[0m06:58:27.813935 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.unique_std_customer_groups_info_ss_customer_group_id.774501cedc, now model.airboltic.customer_details_ss)
+[0m06:58:27.814129 [debug] [Thread-1  ]: Began compiling node model.airboltic.customer_details_ss
+[0m06:58:27.817030 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.customer_details_ss"
+[0m06:58:27.817351 [debug] [Thread-1  ]: Began executing node model.airboltic.customer_details_ss
+[0m06:58:27.817701 [debug] [Thread-1  ]: Finished running node model.airboltic.customer_details_ss
+[0m06:58:27.817913 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_customers_info_ss_customer_id.83830b3252
+[0m06:58:27.818179 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.customer_details_ss, now test.airboltic.not_null_std_customers_info_ss_customer_id.83830b3252)
+[0m06:58:27.818379 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_customers_info_ss_customer_id.83830b3252
+[0m06:58:27.820788 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_customers_info_ss_customer_id.83830b3252"
+[0m06:58:27.821140 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_customers_info_ss_customer_id.83830b3252
+[0m06:58:27.821494 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_customers_info_ss_customer_id.83830b3252
+[0m06:58:27.821705 [debug] [Thread-1  ]: Began running node test.airboltic.unique_std_customers_info_ss_customer_id.67c932ddc0
+[0m06:58:27.821929 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_customers_info_ss_customer_id.83830b3252, now test.airboltic.unique_std_customers_info_ss_customer_id.67c932ddc0)
+[0m06:58:27.822129 [debug] [Thread-1  ]: Began compiling node test.airboltic.unique_std_customers_info_ss_customer_id.67c932ddc0
+[0m06:58:27.824479 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.unique_std_customers_info_ss_customer_id.67c932ddc0"
+[0m06:58:27.824792 [debug] [Thread-1  ]: Began executing node test.airboltic.unique_std_customers_info_ss_customer_id.67c932ddc0
+[0m06:58:27.825141 [debug] [Thread-1  ]: Finished running node test.airboltic.unique_std_customers_info_ss_customer_id.67c932ddc0
+[0m06:58:27.825359 [debug] [Thread-1  ]: Began running node model.airboltic.trip_details_ss
+[0m06:58:27.825581 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.unique_std_customers_info_ss_customer_id.67c932ddc0, now model.airboltic.trip_details_ss)
+[0m06:58:27.825770 [debug] [Thread-1  ]: Began compiling node model.airboltic.trip_details_ss
+[0m06:58:27.827958 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.trip_details_ss"
+[0m06:58:27.828281 [debug] [Thread-1  ]: Began executing node model.airboltic.trip_details_ss
+[0m06:58:27.828635 [debug] [Thread-1  ]: Finished running node model.airboltic.trip_details_ss
+[0m06:58:27.828856 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_trips_ow_airplane_id.f0ab00a21f
+[0m06:58:27.829109 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.trip_details_ss, now test.airboltic.not_null_std_trips_ow_airplane_id.f0ab00a21f)
+[0m06:58:27.829467 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_trips_ow_airplane_id.f0ab00a21f
+[0m06:58:27.831873 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_trips_ow_airplane_id.f0ab00a21f"
+[0m06:58:27.832213 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_trips_ow_airplane_id.f0ab00a21f
+[0m06:58:27.832559 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_trips_ow_airplane_id.f0ab00a21f
+[0m06:58:27.832768 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_trips_ow_destination_city.d2c867e525
+[0m06:58:27.832989 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_trips_ow_airplane_id.f0ab00a21f, now test.airboltic.not_null_std_trips_ow_destination_city.d2c867e525)
+[0m06:58:27.833177 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_trips_ow_destination_city.d2c867e525
+[0m06:58:27.836358 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_trips_ow_destination_city.d2c867e525"
+[0m06:58:27.836693 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_trips_ow_destination_city.d2c867e525
+[0m06:58:27.837050 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_trips_ow_destination_city.d2c867e525
+[0m06:58:27.837272 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_trips_ow_origin_city.0b1a846287
+[0m06:58:27.837501 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_trips_ow_destination_city.d2c867e525, now test.airboltic.not_null_std_trips_ow_origin_city.0b1a846287)
+[0m06:58:27.837702 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_trips_ow_origin_city.0b1a846287
+[0m06:58:27.840129 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_trips_ow_origin_city.0b1a846287"
+[0m06:58:27.840474 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_trips_ow_origin_city.0b1a846287
+[0m06:58:27.840823 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_trips_ow_origin_city.0b1a846287
+[0m06:58:27.841032 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_trips_ow_trip_end_date.5cdb7aff0e
+[0m06:58:27.841249 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_trips_ow_origin_city.0b1a846287, now test.airboltic.not_null_std_trips_ow_trip_end_date.5cdb7aff0e)
+[0m06:58:27.841440 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_trips_ow_trip_end_date.5cdb7aff0e
+[0m06:58:27.843859 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_trips_ow_trip_end_date.5cdb7aff0e"
+[0m06:58:27.844189 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_trips_ow_trip_end_date.5cdb7aff0e
+[0m06:58:27.844539 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_trips_ow_trip_end_date.5cdb7aff0e
+[0m06:58:27.844756 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_trips_ow_trip_end_timestamp.6b7743396f
+[0m06:58:27.844979 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_trips_ow_trip_end_date.5cdb7aff0e, now test.airboltic.not_null_std_trips_ow_trip_end_timestamp.6b7743396f)
+[0m06:58:27.845179 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_trips_ow_trip_end_timestamp.6b7743396f
+[0m06:58:27.847595 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_trips_ow_trip_end_timestamp.6b7743396f"
+[0m06:58:27.847919 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_trips_ow_trip_end_timestamp.6b7743396f
+[0m06:58:27.848270 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_trips_ow_trip_end_timestamp.6b7743396f
+[0m06:58:27.848479 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_trips_ow_trip_id.66802dc5ee
+[0m06:58:27.848702 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_trips_ow_trip_end_timestamp.6b7743396f, now test.airboltic.not_null_std_trips_ow_trip_id.66802dc5ee)
+[0m06:58:27.848895 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_trips_ow_trip_id.66802dc5ee
+[0m06:58:27.851379 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_trips_ow_trip_id.66802dc5ee"
+[0m06:58:27.851704 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_trips_ow_trip_id.66802dc5ee
+[0m06:58:27.852055 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_trips_ow_trip_id.66802dc5ee
+[0m06:58:27.852267 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_std_trips_ow_trip_start_timestamp.2f6be3948d
+[0m06:58:27.852488 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_trips_ow_trip_id.66802dc5ee, now test.airboltic.not_null_std_trips_ow_trip_start_timestamp.2f6be3948d)
+[0m06:58:27.852681 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_std_trips_ow_trip_start_timestamp.2f6be3948d
+[0m06:58:27.855075 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_std_trips_ow_trip_start_timestamp.2f6be3948d"
+[0m06:58:27.855390 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_std_trips_ow_trip_start_timestamp.2f6be3948d
+[0m06:58:27.855743 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_std_trips_ow_trip_start_timestamp.2f6be3948d
+[0m06:58:27.855964 [debug] [Thread-1  ]: Began running node test.airboltic.unique_std_trips_ow_trip_id.4a64a80a2b
+[0m06:58:27.856186 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_std_trips_ow_trip_start_timestamp.2f6be3948d, now test.airboltic.unique_std_trips_ow_trip_id.4a64a80a2b)
+[0m06:58:27.856376 [debug] [Thread-1  ]: Began compiling node test.airboltic.unique_std_trips_ow_trip_id.4a64a80a2b
+[0m06:58:27.859567 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.unique_std_trips_ow_trip_id.4a64a80a2b"
+[0m06:58:27.859888 [debug] [Thread-1  ]: Began executing node test.airboltic.unique_std_trips_ow_trip_id.4a64a80a2b
+[0m06:58:27.860247 [debug] [Thread-1  ]: Finished running node test.airboltic.unique_std_trips_ow_trip_id.4a64a80a2b
+[0m06:58:27.860467 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_airplane_details_ow_airplane_id.ec29e3c0e2
+[0m06:58:27.860692 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.unique_std_trips_ow_trip_id.4a64a80a2b, now test.airboltic.not_null_airplane_details_ow_airplane_id.ec29e3c0e2)
+[0m06:58:27.860886 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_airplane_details_ow_airplane_id.ec29e3c0e2
+[0m06:58:27.863271 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_airplane_details_ow_airplane_id.ec29e3c0e2"
+[0m06:58:27.863588 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_airplane_details_ow_airplane_id.ec29e3c0e2
+[0m06:58:27.863937 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_airplane_details_ow_airplane_id.ec29e3c0e2
+[0m06:58:27.864155 [debug] [Thread-1  ]: Began running node test.airboltic.unique_airplane_details_ow_airplane_id.01f615aa31
+[0m06:58:27.864395 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_airplane_details_ow_airplane_id.ec29e3c0e2, now test.airboltic.unique_airplane_details_ow_airplane_id.01f615aa31)
+[0m06:58:27.864598 [debug] [Thread-1  ]: Began compiling node test.airboltic.unique_airplane_details_ow_airplane_id.01f615aa31
+[0m06:58:27.867011 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.unique_airplane_details_ow_airplane_id.01f615aa31"
+[0m06:58:27.867325 [debug] [Thread-1  ]: Began executing node test.airboltic.unique_airplane_details_ow_airplane_id.01f615aa31
+[0m06:58:27.867672 [debug] [Thread-1  ]: Finished running node test.airboltic.unique_airplane_details_ow_airplane_id.01f615aa31
+[0m06:58:27.867882 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_customer_details_ss_customer_id.21d530e0f1
+[0m06:58:27.868110 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.unique_airplane_details_ow_airplane_id.01f615aa31, now test.airboltic.not_null_customer_details_ss_customer_id.21d530e0f1)
+[0m06:58:27.868301 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_customer_details_ss_customer_id.21d530e0f1
+[0m06:58:27.870736 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_customer_details_ss_customer_id.21d530e0f1"
+[0m06:58:27.871062 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_customer_details_ss_customer_id.21d530e0f1
+[0m06:58:27.871414 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_customer_details_ss_customer_id.21d530e0f1
+[0m06:58:27.871628 [debug] [Thread-1  ]: Began running node test.airboltic.unique_customer_details_ss_customer_id.c0a554dae0
+[0m06:58:27.871853 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_customer_details_ss_customer_id.21d530e0f1, now test.airboltic.unique_customer_details_ss_customer_id.c0a554dae0)
+[0m06:58:27.872043 [debug] [Thread-1  ]: Began compiling node test.airboltic.unique_customer_details_ss_customer_id.c0a554dae0
+[0m06:58:27.874395 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.unique_customer_details_ss_customer_id.c0a554dae0"
+[0m06:58:27.874710 [debug] [Thread-1  ]: Began executing node test.airboltic.unique_customer_details_ss_customer_id.c0a554dae0
+[0m06:58:27.875055 [debug] [Thread-1  ]: Finished running node test.airboltic.unique_customer_details_ss_customer_id.c0a554dae0
+[0m06:58:27.875269 [debug] [Thread-1  ]: Began running node model.airboltic.airplane_metrics_ss
+[0m06:58:27.875485 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.unique_customer_details_ss_customer_id.c0a554dae0, now model.airboltic.airplane_metrics_ss)
+[0m06:58:27.875677 [debug] [Thread-1  ]: Began compiling node model.airboltic.airplane_metrics_ss
+[0m06:58:27.878826 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.airplane_metrics_ss"
+[0m06:58:27.879170 [debug] [Thread-1  ]: Began executing node model.airboltic.airplane_metrics_ss
+[0m06:58:27.879525 [debug] [Thread-1  ]: Finished running node model.airboltic.airplane_metrics_ss
+[0m06:58:27.879749 [debug] [Thread-1  ]: Began running node model.airboltic.customer_group_metrics_ss
+[0m06:58:27.880040 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.airplane_metrics_ss, now model.airboltic.customer_group_metrics_ss)
+[0m06:58:27.880258 [debug] [Thread-1  ]: Began compiling node model.airboltic.customer_group_metrics_ss
+[0m06:58:27.882588 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.customer_group_metrics_ss"
+[0m06:58:27.882908 [debug] [Thread-1  ]: Began executing node model.airboltic.customer_group_metrics_ss
+[0m06:58:27.883261 [debug] [Thread-1  ]: Finished running node model.airboltic.customer_group_metrics_ss
+[0m06:58:27.883482 [debug] [Thread-1  ]: Began running node model.airboltic.high_level_metrics_ss
+[0m06:58:27.883710 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.customer_group_metrics_ss, now model.airboltic.high_level_metrics_ss)
+[0m06:58:27.883905 [debug] [Thread-1  ]: Began compiling node model.airboltic.high_level_metrics_ss
+[0m06:58:27.885912 [debug] [Thread-1  ]: Writing injected SQL for node "model.airboltic.high_level_metrics_ss"
+[0m06:58:27.886223 [debug] [Thread-1  ]: Began executing node model.airboltic.high_level_metrics_ss
+[0m06:58:27.886575 [debug] [Thread-1  ]: Finished running node model.airboltic.high_level_metrics_ss
+[0m06:58:27.886792 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_trip_details_ss_airplane_id.bae13cc772
+[0m06:58:27.887018 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.airboltic.high_level_metrics_ss, now test.airboltic.not_null_trip_details_ss_airplane_id.bae13cc772)
+[0m06:58:27.887217 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_trip_details_ss_airplane_id.bae13cc772
+[0m06:58:27.889645 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_trip_details_ss_airplane_id.bae13cc772"
+[0m06:58:27.889950 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_trip_details_ss_airplane_id.bae13cc772
+[0m06:58:27.890297 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_trip_details_ss_airplane_id.bae13cc772
+[0m06:58:27.890507 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_trip_details_ss_customer_id.715eec90a0
+[0m06:58:27.890729 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_trip_details_ss_airplane_id.bae13cc772, now test.airboltic.not_null_trip_details_ss_customer_id.715eec90a0)
+[0m06:58:27.890920 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_trip_details_ss_customer_id.715eec90a0
+[0m06:58:27.893329 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_trip_details_ss_customer_id.715eec90a0"
+[0m06:58:27.893634 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_trip_details_ss_customer_id.715eec90a0
+[0m06:58:27.893978 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_trip_details_ss_customer_id.715eec90a0
+[0m06:58:27.894191 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_trip_details_ss_flight_time_minutes.e4aefc2b9d
+[0m06:58:27.894414 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_trip_details_ss_customer_id.715eec90a0, now test.airboltic.not_null_trip_details_ss_flight_time_minutes.e4aefc2b9d)
+[0m06:58:27.894607 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_trip_details_ss_flight_time_minutes.e4aefc2b9d
+[0m06:58:27.897042 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_trip_details_ss_flight_time_minutes.e4aefc2b9d"
+[0m06:58:27.897382 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_trip_details_ss_flight_time_minutes.e4aefc2b9d
+[0m06:58:27.897728 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_trip_details_ss_flight_time_minutes.e4aefc2b9d
+[0m06:58:27.897938 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_trip_details_ss_price.00ba9a76dc
+[0m06:58:27.898160 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_trip_details_ss_flight_time_minutes.e4aefc2b9d, now test.airboltic.not_null_trip_details_ss_price.00ba9a76dc)
+[0m06:58:27.898347 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_trip_details_ss_price.00ba9a76dc
+[0m06:58:27.901594 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_trip_details_ss_price.00ba9a76dc"
+[0m06:58:27.901916 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_trip_details_ss_price.00ba9a76dc
+[0m06:58:27.902268 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_trip_details_ss_price.00ba9a76dc
+[0m06:58:27.902477 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_trip_details_ss_status.10773622d3
+[0m06:58:27.902705 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_trip_details_ss_price.00ba9a76dc, now test.airboltic.not_null_trip_details_ss_status.10773622d3)
+[0m06:58:27.902912 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_trip_details_ss_status.10773622d3
+[0m06:58:27.905325 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_trip_details_ss_status.10773622d3"
+[0m06:58:27.905661 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_trip_details_ss_status.10773622d3
+[0m06:58:27.906019 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_trip_details_ss_status.10773622d3
+[0m06:58:27.906234 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_trip_details_ss_trip_end_date.4844ee3055
+[0m06:58:27.906462 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_trip_details_ss_status.10773622d3, now test.airboltic.not_null_trip_details_ss_trip_end_date.4844ee3055)
+[0m06:58:27.906654 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_trip_details_ss_trip_end_date.4844ee3055
+[0m06:58:27.909031 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_trip_details_ss_trip_end_date.4844ee3055"
+[0m06:58:27.909368 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_trip_details_ss_trip_end_date.4844ee3055
+[0m06:58:27.909713 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_trip_details_ss_trip_end_date.4844ee3055
+[0m06:58:27.909937 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_trip_details_ss_trip_end_timestamp.9f8f1bd86d
+[0m06:58:27.910175 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_trip_details_ss_trip_end_date.4844ee3055, now test.airboltic.not_null_trip_details_ss_trip_end_timestamp.9f8f1bd86d)
+[0m06:58:27.910374 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_trip_details_ss_trip_end_timestamp.9f8f1bd86d
+[0m06:58:27.912809 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_trip_details_ss_trip_end_timestamp.9f8f1bd86d"
+[0m06:58:27.913166 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_trip_details_ss_trip_end_timestamp.9f8f1bd86d
+[0m06:58:27.913523 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_trip_details_ss_trip_end_timestamp.9f8f1bd86d
+[0m06:58:27.913743 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_trip_details_ss_trip_id.2c1bf4f9bf
+[0m06:58:27.913973 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_trip_details_ss_trip_end_timestamp.9f8f1bd86d, now test.airboltic.not_null_trip_details_ss_trip_id.2c1bf4f9bf)
+[0m06:58:27.914169 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_trip_details_ss_trip_id.2c1bf4f9bf
+[0m06:58:27.916573 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_trip_details_ss_trip_id.2c1bf4f9bf"
+[0m06:58:27.916897 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_trip_details_ss_trip_id.2c1bf4f9bf
+[0m06:58:27.917244 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_trip_details_ss_trip_id.2c1bf4f9bf
+[0m06:58:27.917457 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_trip_details_ss_trip_start_timestamp.69042af51c
+[0m06:58:27.917771 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_trip_details_ss_trip_id.2c1bf4f9bf, now test.airboltic.not_null_trip_details_ss_trip_start_timestamp.69042af51c)
+[0m06:58:27.917976 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_trip_details_ss_trip_start_timestamp.69042af51c
+[0m06:58:27.921214 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_trip_details_ss_trip_start_timestamp.69042af51c"
+[0m06:58:27.921546 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_trip_details_ss_trip_start_timestamp.69042af51c
+[0m06:58:27.921899 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_trip_details_ss_trip_start_timestamp.69042af51c
+[0m06:58:27.922126 [debug] [Thread-1  ]: Began running node test.airboltic.not_null_airplane_metrics_ss_airplane_id.447be6bde7
+[0m06:58:27.922365 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.airboltic.not_null_trip_details_ss_trip_start_timestamp.69042af51c, now test.airboltic.not_null_airplane_metrics_ss_airplane_id.447be6bde7)
+[0m06:58:27.922565 [debug] [Thread-1  ]: Began compiling node test.airboltic.not_null_airplane_metrics_ss_airplane_id.447be6bde7
+[0m06:58:27.924951 [debug] [Thread-1  ]: Writing injected SQL for node "test.airboltic.not_null_airplane_metrics_ss_airplane_id.447be6bde7"
+[0m06:58:27.925270 [debug] [Thread-1  ]: Began executing node test.airboltic.not_null_airplane_metrics_ss_airplane_id.447be6bde7
+[0m06:58:27.925618 [debug] [Thread-1  ]: Finished running node test.airboltic.not_null_airplane_metrics_ss_airplane_id.447be6bde7
+[0m06:58:27.926086 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m06:58:27.926266 [debug] [MainThread]: Connection 'test.airboltic.not_null_airplane_metrics_ss_airplane_id.447be6bde7' was properly closed.
+[0m06:58:27.929249 [debug] [MainThread]: Command end result
+[0m06:58:28.010217 [debug] [MainThread]: Acquiring new duckdb connection 'generate_catalog'
+[0m06:58:28.010452 [info ] [MainThread]: Building catalog
+[0m06:58:28.017974 [debug] [ThreadPool]: Acquiring new duckdb connection 'memory.information_schema'
+[0m06:58:28.022961 [debug] [ThreadPool]: Using duckdb connection "memory.information_schema"
+[0m06:58:28.023242 [debug] [ThreadPool]: On memory.information_schema: BEGIN
+[0m06:58:28.023400 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:58:28.023745 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m06:58:28.023904 [debug] [ThreadPool]: Using duckdb connection "memory.information_schema"
+[0m06:58:28.024114 [debug] [ThreadPool]: On memory.information_schema: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "airboltic", "target_name": "staging", "connection_name": "memory.information_schema"} */
+with relations AS (
+      select
+        t.table_name
+        , t.database_name
+        , t.schema_name
+        , 'BASE TABLE' as table_type
+        , t.comment as table_comment
+      from duckdb_tables() t
+      WHERE t.database_name = 'memory'
+      UNION ALL
+      SELECT v.view_name as table_name
+      , v.database_name
+      , v.schema_name
+      , 'VIEW' as table_type
+      , v.comment as table_comment
+      from duckdb_views() v
+      WHERE v.database_name = 'memory'
+    )
+    select
+        'memory' as table_database,
+        r.schema_name as table_schema,
+        r.table_name,
+        r.table_type,
+        r.table_comment,
+        c.column_name,
+        c.column_index as column_index,
+        c.data_type as column_type,
+        c.comment as column_comment,
+        '' as table_owner
+    FROM relations r JOIN duckdb_columns() c ON r.schema_name = c.schema_name AND r.table_name = c.table_name
+    WHERE (upper(r.schema_name) = upper('public_trip_data_staging') or upper(r.schema_name) = upper('main_intermediate_layer_airboltic') or upper(r.schema_name) = upper('private_customer_data_staging') or upper(r.schema_name) = upper('public_order_data_staging') or upper(r.schema_name) = upper('main_standardized_layer_airboltic') or upper(r.schema_name) = upper('main_metric_layer_airboltic') or upper(r.schema_name) = upper('public_airplane_data_staging') or upper(r.schema_name) = upper('public_customer_data_staging'))
+    ORDER BY
+        r.schema_name,
+        r.table_name,
+        c.column_index
+[0m06:58:28.038700 [debug] [ThreadPool]: SQL status: OK in 0.014 seconds
+[0m06:58:28.040030 [debug] [ThreadPool]: On memory.information_schema: ROLLBACK
+[0m06:58:28.040276 [debug] [ThreadPool]: Failed to rollback 'memory.information_schema'
+[0m06:58:28.040445 [debug] [ThreadPool]: On memory.information_schema: Close
+[0m06:58:28.069004 [info ] [MainThread]: Catalog written to /Users/amruth.anand/github/Assignment_AirBoltic/airboltic/target/catalog.json
+[0m06:58:28.070471 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 0.8860774, "process_user_time": 1.396509, "process_kernel_time": 0.174902, "process_mem_max_rss": "139296768", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m06:58:28.070923 [debug] [MainThread]: Command `dbt docs generate` succeeded at 06:58:28.070859 after 0.89 seconds
+[0m06:58:28.071139 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m06:58:28.071373 [debug] [MainThread]: Connection 'memory.information_schema' was properly closed.
+[0m06:58:28.071588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10353f2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105beb850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ea99d0>]}
+[0m06:58:28.071828 [debug] [MainThread]: Flushing usage events
+[0m06:58:34.678083 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072bf2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1119e7700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1119e7520>]}
+
+
+============================== 06:58:34.680763 | 9894c905-07aa-4fc1-b8d1-d62442acfcbd ==============================
+[0m06:58:34.680763 [info ] [MainThread]: Running with dbt=1.8.7
+[0m06:58:34.681109 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/amruth.anand/github/Assignment_AirBoltic/airboltic', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/amruth.anand/github/Assignment_AirBoltic/airboltic/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt docs serve', 'send_anonymous_usage_stats': 'True'}
+[0m06:58:34.811584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9894c905-07aa-4fc1-b8d1-d62442acfcbd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a92fd0>]}
+[0m06:58:34.850871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9894c905-07aa-4fc1-b8d1-d62442acfcbd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111aff4c0>]}
+[0m06:59:12.317301 [error] [MainThread]: Encountered an error:
+
+[0m06:59:12.326193 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/amruth.anand/github/Assignment_AirBoltic/airboltic/venv/lib/python3.9/site-packages/dbt/cli/requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/Users/amruth.anand/github/Assignment_AirBoltic/airboltic/venv/lib/python3.9/site-packages/dbt/cli/requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/amruth.anand/github/Assignment_AirBoltic/airboltic/venv/lib/python3.9/site-packages/dbt/cli/requires.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/amruth.anand/github/Assignment_AirBoltic/airboltic/venv/lib/python3.9/site-packages/dbt/cli/requires.py", line 247, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/amruth.anand/github/Assignment_AirBoltic/airboltic/venv/lib/python3.9/site-packages/dbt/cli/requires.py", line 294, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/amruth.anand/github/Assignment_AirBoltic/airboltic/venv/lib/python3.9/site-packages/dbt/cli/main.py", line 303, in docs_serve
+    results = task.run()
+  File "/Users/amruth.anand/github/Assignment_AirBoltic/airboltic/venv/lib/python3.9/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/Users/amruth.anand/.pyenv/versions/3.9.20/lib/python3.9/socketserver.py", line 232, in serve_forever
+    ready = selector.select(poll_interval)
+  File "/Users/amruth.anand/.pyenv/versions/3.9.20/lib/python3.9/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+
+[0m06:59:12.328919 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_wall_clock_time": 37.694107, "process_user_time": 0.844539, "process_kernel_time": 0.113283, "process_mem_max_rss": "114163712", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m06:59:12.329704 [debug] [MainThread]: Command `dbt docs serve` failed at 06:59:12.329618 after 37.70 seconds
+[0m06:59:12.330202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072bf2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111fa58e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111fa5790>]}
+[0m06:59:12.330588 [debug] [MainThread]: Flushing usage events
+[0m07:16:03.316168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045c72e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106059b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060830a0>]}
+
+
+============================== 07:16:03.320324 | 774274e2-7e15-4a13-944a-80f09b606445 ==============================
+[0m07:16:03.320324 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:16:03.320739 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/amruth.anand/github/Assignment_AirBoltic/airboltic', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/amruth.anand/github/Assignment_AirBoltic/airboltic/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt clean', 'send_anonymous_usage_stats': 'True'}
+[0m07:16:03.399676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '774274e2-7e15-4a13-944a-80f09b606445', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d6a490>]}
+[0m07:16:03.456010 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.22349475, "process_user_time": 0.741797, "process_kernel_time": 0.148381, "process_mem_max_rss": "92766208", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m07:16:03.456430 [debug] [MainThread]: Command `dbt clean` succeeded at 07:16:03.456364 after 0.22 seconds
+[0m07:16:03.456667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045c72e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106083d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106188250>]}
+[0m07:16:03.456965 [debug] [MainThread]: Flushing usage events
