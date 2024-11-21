@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: std_airplane_info_ss
+    description: '{{ doc("std_airplane_info_ss") }}'
+    columns:
+      - name: airplane_id
+        description: Unique identifier for each airplane.
+        data_type: integer
+        tests:
+          - not_null
+          - unique
+      - name: airplane_model
+        description: Model of the airplane.
+        data_type: string
+        tests:
+          - not_null
+      - name: manufacturer
+        description: Manufacturer of the airplane.
+        data_type: string
+        tests:
+          - not_null
+  - name: std_airplane_model_ow
+    description: '{{ doc("std_airplane_model_ow") }}'
+    columns:
+      - name: manufacturer
+        description: The name of the airplane manufacturer.
+        data_type: string
+        tests:
+          - not_null
+      - name: model
+        description: The specific model of the airplane.
+        data_type: string
+        tests:
+          - not_null
+      - name: max_seats
+        description: The maximum number of seats available in the airplane.
+        data_type: float
+        tests:
+          - not_null
+      - name: max_weight
+        description: The maximum weight capacity of the airplane (in appropriate units).
+        data_type: float
+      - name: max_distance
+        description: The maximum distance the airplane can travel without refueling.
+        data_type: float
+      - name: engine_type
+        description: The type of engine used in the airplane.
+        data_type: string

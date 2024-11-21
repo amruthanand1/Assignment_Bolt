@@ -1,0 +1,22 @@
+sources:
+  - name: public_airplane_data
+    schema: "public_airplane_data_{{ var('env') }}"
+    tables:
+      - name: airplane_model_ap
+      - name: airplane_ap
+  - name: public_customer_data
+    schema: "public_customer_data_{{ var('env') }}"
+    tables:
+      - name: customer_group_data_ap
+  - name: private_customer_data
+    schema: "private_customer_data_{{ var('env') }}"
+    tables:
+      - name: customer_data_ap
+  - name: public_trip_data
+    schema: "public_trip_data_{{ var('env') }}"
+    tables:
+      - name: customer_trip_ap
+  - name: public_order_data
+    schema: "public_order_data_{{ var('env') }}"
+    tables:
+      - name: order_data_ap

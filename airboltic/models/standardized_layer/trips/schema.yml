@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: std_trips_ow
+    description: '{{ doc("std_trips_ow") }}'
+    columns:
+      - name: trip_id
+        description: Unique identifier for each trip.
+        data_type: integer
+        tests:
+          - not_null
+          - unique
+      - name: origin_city
+        description: Origin city of the trip.
+        data_type: string
+        tests:
+          - not_null
+      - name: destination_city
+        description: Destination city of the trip.
+        data_type: string
+        tests:
+          - not_null
+      - name: airplane_id
+        description: Unique identifier for each airplane.
+        data_type: integer
+        tests:
+          - not_null
+      - name: trip_start_timestamp
+        description: Start timestamp of the trip.
+        data_type: timestamp
+        tests:
+          - not_null
+      - name: trip_end_timestamp
+        description: End timestamp of the trip.
+        data_type: timestamp
+        tests:
+          - not_null
+      - name: trip_end_date
+        description: End date of the trip.
+        data_type: integer
+        tests:
+          - not_null

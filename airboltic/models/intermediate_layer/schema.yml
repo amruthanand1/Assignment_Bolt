@@ -1,0 +1,116 @@
+version: 2
+
+models:
+  - name: trip_details_ss
+    description: '{{ doc("trip_details_ss") }}'
+    columns:
+      - name: trip_id
+        description: ID of the trip.
+        data_type: integer
+        tests:
+          - not_null
+      - name: origin_city
+        description: Origin city of the trip.
+        data_type: string
+      - name: destination_city
+        description: Destination city of the trip.
+        data_type: string
+      - name: airplane_id
+        description: ID of the airplane.
+        data_type: integer
+        tests:
+          - not_null
+      - name: customer_id
+        description: ID of the customer.
+        data_type: integer
+        tests:
+          - not_null
+      - name: price
+        description: Price of the trip.
+        data_type: float
+        tests:
+          - not_null
+      - name: status  
+        description: Status of the trip.
+        data_type: string
+        tests:
+          - not_null
+      - name: trip_start_timestamp
+        description: Start timestamp of the trip.
+        data_type: timestamp
+        tests:
+          - not_null
+      - name: trip_end_timestamp
+        description: End timestamp of the trip.
+        data_type: timestamp
+        tests:
+          - not_null
+      - name: flight_time_minutes
+        description: Flight time in minutes.
+        data_type: float
+        tests:
+          - not_null
+      - name: trip_end_date
+        description: End date of the trip.
+        data_type: date
+        tests:
+          - not_null
+
+  - name: customer_details_ss 
+    description: '{{ doc("customer_details_ss") }}'
+    columns:
+      - name: customer_id
+        description: Unique identifier for each customer.
+        data_type: integer
+        tests:
+          - not_null
+          - unique
+      - name: customer_name
+        description: Name of the customer.
+        data_type: string
+      - name: customer_group_id
+        description: Group ID for which customer belongs.
+        data_type: integer
+      - name: customer_email_hashed
+        description: Hashed email of the customer.
+        data_type: string
+      - name: customer_phone_number_hashed
+        description: Hashed phone number of the customer.
+        data_type: string
+      - name: customer_group_type
+        description: Type of the group.
+        data_type: string
+      - name: customer_group_name
+        description: Name of the group.
+        data_type: string
+      - name: customer_group_register_number
+        description: Register number of the group.
+        data_type: string
+
+  - name: airplane_details_ow
+    description: '{{ doc("airplane_details_ow") }}'
+    columns:
+      - name: airplane_id
+        description: Unique identifier for each airplane.
+        data_type: integer
+        tests:
+          - not_null
+          - unique
+      - name: manufacturer
+        description: Manufacturer of the airplane.
+        data_type: string
+      - name: model
+        description: Model of the airplane.
+        data_type: string
+      - name: max_seats
+        description: Maximum number of seats in the airplane.
+        data_type: integer
+      - name: max_weight
+        description: Maximum weight of the airplane.
+        data_type: float
+      - name: max_distance
+        description: Maximum distance the airplane can travel.
+        data_type: float
+      - name: engine_type
+        description: Type of engine in the airplane.
+        data_type: string

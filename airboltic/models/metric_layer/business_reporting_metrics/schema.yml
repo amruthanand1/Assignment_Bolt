@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: high_level_metrics_ss
+    description: '{{ doc("high_level_metrics_ss") }}'
+    columns:
+      - name: trip_end_date
+        description: The date on which trips ended. Used as the primary grouping key.
+        data_type: date
+      - name: active_customers
+        description: The number of distinct customers active on a given day.
+        data_type: integer
+      - name: total_trips_completed
+        description: The number of trips marked as completed for the given date.
+        data_type: integer
+      - name: total_revenue
+        description: The total revenue generated on the given date.
+        data_type: float
+      - name: total_flight_time_minutes
+        description: The total flight time in minutes for all trips on the given date.
+        data_type: integer
