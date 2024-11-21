@@ -1,0 +1,13 @@
+# Note: We need to set the DBT_ENV on the Airflow instance.
+# On the live instance, export DBT_ENV=live
+# On the staging instance, export DBT_ENV=staging
+
+airboltic:
+  target: "{{ env_var('DBT_ENV') }}"
+  outputs:
+    staging:
+      type: duckdb
+      path: ":memory:"
+    live:
+      type: duckdb
+      path: ":memory:"
